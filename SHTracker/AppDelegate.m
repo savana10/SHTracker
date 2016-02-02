@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SHLogger.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // to know the starting
+    [[SHLogger logger]  log:@{@"app opened":@"user opens app"}];
+    [[SHLogger logger] setNoOfTaps:4];
     return YES;
 }
 
@@ -41,5 +44,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end
