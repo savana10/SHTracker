@@ -1,5 +1,5 @@
 
-SHTracker allows you to track auto logging whenever a UIViewController willApper , UIButton action is performed and UITableViewCell is clicked.
+SHTracker allows you to track auto logging whenever a UIViewController willAppear , UIButton action is performed and UITableViewCell is clicked.
 Logs are saved locally, to send logs by default tap 3 three times and it gives options for sending logs using default Mail app on device.
 
 
